@@ -14,6 +14,30 @@ s2 = "Kelly"
 result=s1[0:2]+s2+s1[2:4]
 print(result)
 
+#Excersie 3
+#Given an input string with the combination of the lower
+# and upper case arrange characters in such a way that all
+# lowercase letters should come first.
+def makeString(str):
+	lowerWord = ""
+	upperWord = ""
+	result = ""
+	for word in range (len(str)):
+		if str[word].islower() == True:
+			lowerWord +=str[word]
+		elif str[word].isupper() == True:
+			upperWord +=str[word]
+		result = lowerWord + upperWord
+	return result
+
+value = "PyNaTive"
+res = makeString(value)
+print(res)
+
+
+
+
+
 
 
 
