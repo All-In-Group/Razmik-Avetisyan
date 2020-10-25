@@ -34,6 +34,68 @@ value = "PyNaTive"
 res = makeString(value)
 print(res)
 
+#Excersie 4
+# Count all lower case, upper case,
+# digits, and special symbols from a
+# given string
+
+def showWord(str):
+	digits = ""
+	words = ""
+	symbhols = ""
+
+	for word in str:
+		if word.isdigit()==True:
+			digits+=word
+		elif word.islower() or word.isupper():
+			words += word
+		else:
+			symbhols +=word
+	#result = [digits,words,symbhols]
+	result = {'numbers':digits,'strings':words,'sym':symbhols}
+	return result
+
+
+
+mainStr = "P@#yn26at^&i5ve"
+count =showWord(mainStr)
+print(f'the count of numeric words {len(count["numbers"])}')
+print(f'the count of words {len(count["strings"])}')
+print(f'the count of symbhols {len(count["sym"])}')
+
+#Excersie 5
+#create a third-string made of the
+# first char of s1 then the last char of s2,
+# Next, the second char of s1 and second last char of s2,
+# and so on. Any leftover chars go at the end of the result.
+def mixFunction(str1,str2):
+	result = str1[0]+str2[-1]+str1[1]+str2[-2]+str1[2:]+str2[-2:]
+	return result
+s1="Abc"
+s2="Xyz"
+res = mixFunction(s1,s2)
+print(res)
+
+#Excersie 6
+#String characters balance Test
+def checkBalance(str1,str2):
+	charList = [str1,str2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
