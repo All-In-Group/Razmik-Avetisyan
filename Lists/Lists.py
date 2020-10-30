@@ -20,3 +20,6 @@ lst2 = [50,20,35,85,32]
 val = list_ckecker(lst1)
 val2 = list_ckecker(lst2)
 print(val2)
+
+
+
