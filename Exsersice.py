@@ -80,6 +80,14 @@ print(res)
 #String characters balance Test
 def checkBalance(str1,str2):
 	charList = [str1,str2]
+	for char in str1:
+		print(char)
+
+
+s1="Pycharm"
+s2 = "Pyhcharm"
+res = checkBalance(s1,s2)
+
 
 
 
