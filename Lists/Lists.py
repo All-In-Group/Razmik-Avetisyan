@@ -21,5 +21,23 @@ val = list_ckecker(lst1)
 val2 = list_ckecker(lst2)
 print(val2)
 
+#Question 9:
+#Reverse a given number and return true
+# if it is the same as the original number
+def reverce_number(number):
+	main_list = []
+	reverced_list = []
+	for num in range (len(str(number))):
+		main_list.append(num)
+		reverced_list.append(num)
+	reverced_list.reverse()
+	if main_list == reverced_list:
+		print('The Numer are the same original number')
+	else:
+		print('The Numer are not the same original number')
+
+val = 121
+res = reverce_number(val)
+print(res)
 
 
