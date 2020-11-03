@@ -40,4 +40,18 @@ val = 121
 res = reverce_number(val)
 print(res)
 
+#Question 9:
+#Reverse the following list using for loop
+def reverceList(arr):
+	newlist = []
+	for i in range(len(arr)):
+		newlist = arr
+		newlist.reverse()
+		print(newlist[i])
+
+
+list1 = [10,50,30,40,60]
+list_reverce = reverceList(list1)
+
+
 
